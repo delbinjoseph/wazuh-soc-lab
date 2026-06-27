@@ -40,13 +40,15 @@ Windows and Linux handle this differently under the hood. Windows uses its nativ
 Default FIM treats every file change the same way, which isn't enough on its own. I wrote a rule that escalates specifically when a `.exe` file lands in the monitored folder, a realistic pattern for malware being dropped onto a system.
 
 ```xml
-<rule id="100002" level="12">
-  <if_sid>554</if_sid>
-  <field name="file" type="pcre2">\.exe$</field>
-  <description>Suspicious executable file dropped in monitored directory</description>
-  <mitre><id>T1105</id></mitre>
-  <group>malware,pci_dss_11.5,</group>
-</rule>
+<group name="local,syscheck,">
+  <rule id="100002" level="12">
+    <if_sid>554</if_sid>
+    <field name="file" type="pcre2">\.exe$</field>
+    <description>Suspicious executable file dropped in monitored directory</description>
+    <mitre><id>T1105</id></mitre>
+    <group>malware,pci_dss_11.5,</group>
+  </rule>
+</group>
 ```
 
 ![Custom rule firing on a .exe dropped in the monitored folder, escalated to level 12 with MITRE T1105 mapped](screenshots/02-custom-rule-alert.png)
