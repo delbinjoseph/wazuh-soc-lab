@@ -1,0 +1,9 @@
+<group name="local,syscheck,">
+  <rule id="100002" level="12">
+    <if_sid>554</if_sid>
+    <field name="file" type="pcre2">\.exe$</field>
+    <description>Suspicious executable file dropped in monitored directory</description>
+    <mitre><id>T1105</id></mitre>
+    <group>malware,pci_dss_11.5,</group>
+  </rule>
+</group>
