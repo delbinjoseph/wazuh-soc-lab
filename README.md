@@ -3,6 +3,7 @@
 ## What this demonstrates
 
 - A multi-OS SIEM deployment monitoring Windows and Linux endpoints from one dashboard
+- Real-time file integrity monitoring (FIM) on both Windows and Linux, normalized into one alert format
 - A custom detection rule, written from scratch and mapped to MITRE ATT&CK, not pulled from Wazuh's default ruleset
 - Sysmon added for process-level visibility that default Windows logs don't provide
 - Three documented cases of telling a false positive apart from a real threat, including one I didn't expect
