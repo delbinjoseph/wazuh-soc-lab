@@ -108,4 +108,8 @@ I confirmed the full cycle worked as intended: the block engaged, lifted automat
 
 ## Contact
 
-[LinkedIn](https://www.linkedin.com/in/delbinjoseph/) · [Portfolio](https://delbinjoseph.com/)
+[LinkedIn](https://www.linkedin.com/in/delbinjoseph/) · [Portfolio](https://delbinjoseph.com/) · [hello@delbinjoseph.com](mailto:hello@delbinjoseph.com)
+
+---
+
+*This lab was built in an isolated, offline environment for educational purposes. Configurations shown intentionally weaken default security controls to demonstrate detection capabilities and should not be replicated outside a controlled lab.*
